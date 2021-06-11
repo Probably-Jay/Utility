@@ -1,0 +1,15 @@
+{
+    "name": "~SaveSystem",
+    "references": [
+        "GUID:dc8b2f9a5e0f9a44da0afcfccac8f6ed"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
