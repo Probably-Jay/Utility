@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 
 
-// added by jay 12/02
-
 /// <summary>
 /// Singlton base class. 
 /// <see cref="T"/> must be the type of the child inheriting from this class.

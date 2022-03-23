@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
-using NetSystem;
-using SaveSystem;
-using GameCore;
+
 
 // created Jay 04/03
 
@@ -10,12 +8,7 @@ using GameCore;
  /// </summary>
 public class SingletonInitialiser : MonoBehaviour
 {
-    [SerializeField] GameObject eventsManager;
-    [SerializeField] GameObject applicationManager;
-    [SerializeField] GameObject sceneChangeController;
-    [SerializeField] GameObject saveManager;
-    [SerializeField] GameObject gameManager;
-    [SerializeField] GameObject networkHandler;
+   
 
 
     private void Awake()
@@ -25,12 +18,8 @@ public class SingletonInitialiser : MonoBehaviour
 
     private void CreateSingletons()
     {
-        CreateSingleon<EventsManager>(eventsManager);
-        CreateSingleon<ApplicationManager>(applicationManager);
-        CreateSingleon<SceneChangeController>(sceneChangeController);
-        CreateSingleon<SaveManager>(saveManager);
-        CreateSingleon<NetworkHandler>(networkHandler);
-        CreateSingleon<GameManager>(gameManager);
+      //  CreateSingleon<EventsManager>(eventsManager);
+     
     }
 
     private void CreateSingleon<T>(GameObject singletonPrefab) where T : Singleton<T>
