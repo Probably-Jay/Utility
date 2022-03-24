@@ -69,10 +69,10 @@
      <Compile Include="Assets\Scripts\BuddingUp\Localisation\LocaliseStaticText.cs" />
      <Compile Include="Assets\Scripts\BuddingUp\Localisation\Localiser.cs" />
      <Compile Include="Assets\Scripts\BuddingUp\Localisation\LocaliserSettingsApplier.cs" />
-     <Compile Include="Assets\Scripts\Helper\Utility\EnumUtility.cs" />
-     <Compile Include="Assets\Scripts\Helper\Utility\MonoExtentions.cs" />
-     <Compile Include="Assets\Scripts\Singleton\Singleton.cs" />
      <Compile Include="Assets\Scripts\Singleton\SingletonInitialiser.cs" />
+     <Compile Include="Assets\Scripts\Utility\Helper\MonoExtentions.cs" />
+     <Compile Include="Assets\Scripts\Utility\Helper\Utility.cs" />
+     <Compile Include="Assets\Scripts\Utility\Singleton.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

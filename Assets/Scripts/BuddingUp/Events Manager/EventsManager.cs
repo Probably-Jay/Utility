@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
+using Singleton;
 using UnityEngine.Events;
 
 // created by jay 12/02, adapted from https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events" and https://stackoverflow.com/a/42034899/7711148
@@ -44,13 +45,13 @@ public class EventsManager : Singleton<EventsManager>
     //    if (parameterEvents == null) Instance.parameterEvents = new Dictionary<ParameterEventType, Action<EventParams>>();
     //}
 
-    public override void Initialise()
-    {
-        base.InitSingleton();
-        if (events == null) Instance.events = new Dictionary<EventType, Action>();
-        if (parameterEvents == null) Instance.parameterEvents = new Dictionary<ParameterEventType, Action<object>>();
-       // BindEvent(EventType.EnterNewScene, CleanEvents);
-    }
+    // public override void Initialise()
+    // {
+    //     base.InitSingleton();
+    //     if (events == null) Instance.events = new Dictionary<EventType, Action>();
+    //     if (parameterEvents == null) Instance.parameterEvents = new Dictionary<ParameterEventType, Action<object>>();
+    //    // BindEvent(EventType.EnterNewScene, CleanEvents);
+    // }
 
 
     //private void OnDisable()

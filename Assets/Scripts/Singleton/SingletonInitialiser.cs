@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Singleton;
+using UnityEngine;
 
 
 // created Jay 04/03
@@ -36,6 +37,6 @@ public class SingletonInitialiser : MonoBehaviour
         }
 
         var singletonObject = Instantiate(singletonPrefab);
-        singletonObject.GetComponent<T>().Initialise();
+      //  singletonObject.GetComponent<T>().Initialise();
     }
 }
