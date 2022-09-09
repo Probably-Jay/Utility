@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Reflection;
 using System;
 
-public static class MonoExtentions
+public static class ComponentHanglingOld
 {
     /// <summary>
     /// Calls <see cref="GameObject.GetComponent{T}"/> and assigns the result to <paramref name="componentVariable"/>. Debug logs if component cannot be found.

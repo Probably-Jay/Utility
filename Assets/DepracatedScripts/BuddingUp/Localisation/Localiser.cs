@@ -141,7 +141,7 @@ namespace Localisation
             text = new Dictionary<Language, Dictionary<TextID, string>>();
             try
             {
-                foreach (var language in Helper.EnumUtility.GetEnumValues<Language>())
+                foreach (var language in EnumUtility.EnumUtility.GetEnumValues<Language>())
                 {
                     LoadLanguage(loader, language);
                 }
@@ -161,7 +161,7 @@ namespace Localisation
             Dictionary<string, string> rawDictionary = loader.GetDictionary(language.ToString());
 
             Dictionary<TextID, string> dictionary = new Dictionary<TextID, string>();
-            foreach (var textID in Helper.EnumUtility.GetEnumValues<TextID>())
+            foreach (var textID in EnumUtility.EnumUtility.GetEnumValues<TextID>())
             {
                 if (!rawDictionary.ContainsKey(textID.ToString()))
                 {
